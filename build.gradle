@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+version = '0.1.0'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+//create a single Jar with all dependencies
+task buildJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Hello World Jar Example',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'hn.daniel.HelloWorld'
+    }
+    baseName = 'helloworld'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+}

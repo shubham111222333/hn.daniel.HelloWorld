@@ -1,0 +1,18 @@
+__MACOSX
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+.npmrc
+._*
+*.un~
+*.log
+*.code-workspace
+
+# Java
+build/
+.gradle
+*.class
+*.jar
+*.war
+*.ear
