@@ -9,7 +9,7 @@ A simple example of a jar library built using [Gradle](https://gradle.org/).
 
 ## Requirements
 
-- [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7 or higher
+- [Oracle Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/) or [OpenJDK](https://openjdk.java.net/install/)
 - [Gradle](https://gradle.org/install/)
 
 ## Building
