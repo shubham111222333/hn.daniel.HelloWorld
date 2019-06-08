@@ -1,6 +1,6 @@
 [![Author](https://img.shields.io/badge/author-Daniel%20M.%20Hendricks-lightgrey.svg?colorB=9900cc&style=flat-square)](https://www.danhendricks.com/?utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=wordpress-mu-common-toolkit)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/dmhendricks/hn.daniel.HelloWorld/blob/master/LICENSE)
-[![DigitalOcean](https://img.shields.io/badge/hosting-Digital%20Ocean-green.svg?style=flat-square&label=hosting&colorB=0152FF)](https://m.do.co/c/8a88362f5683?utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=dmhendricks%2Fwordpress-mu-common-toolkit)
+[![DigitalOcean](https://img.shields.io/badge/hosting-Digital%20Ocean-green.svg?style=flat-square&label=hosting&colorB=0152FF)](https://m.do.co/t/8a88362f5683?utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=dmhendricks%2Fwordpress-mu-common-toolkit)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/dmhendricks/wordpress-mu-common-toolkit.svg?style=social)](https://twitter.com/danielhendricks)
 
 # hn.daniel.HelloWorld
