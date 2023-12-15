@@ -1,32 +1,23 @@
-apply plugin: 'java'
-apply plugin: 'org.owasp.dependencycheck'
-
-version = '0.1.0'
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
-
-//create a single Jar with all dependencies
-task buildJar(type: Jar) {
-	manifest {
-        attributes 'Implementation-Title': 'Hello World Jar Example',  
-        	'Implementation-Version': version,
-        	'Main-Class': 'hn.daniel.HelloWorld'
-    }
-    baseName = 'helloworld'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-    with jar
+plugins {
+    id 'java'
+    id 'org.owasp.dependencycheck' version '6.2.0'
 }
 
-//Get dependencies from Maven central repository
+group = 'hn.daniel'
+version = '0.1.0'
+
 repositories {
     mavenCentral()
 }
+
 dependencies {
-        classpath 'org.owasp:dependency-check-gradle:3.1.2'
-    }
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'junit:junit:4.12'
+}
 
+// OWASP Dependency Check settings
 dependencyCheck {
-
     // let's ignore errors to make builds in Jenkins more stable
     failOnError = false
 
